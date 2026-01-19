@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run dev\" \"npm run client\""
   },
   "author": "Ayeni opeyemi",
   "license": "ISC",
@@ -20,5 +20,8 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.4",
     "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
