@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
+import Spinner from '../Components/Spinner'
 import GoalForm from '../Components/GoalForm'
 import GoalItem from '../Components/GoalItems'
-import Spinner from '../Components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 
 function Dashboard() {
@@ -38,7 +38,7 @@ function Dashboard() {
   return (
     <>
       <section className='heading'>
-        <h1>Welcome {user && user.name}</h1>
+        {/* <h1>Welcome {user && user.name}</h1> */}
         <p>Goals Dashboard</p>
       </section>
 

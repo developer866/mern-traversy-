@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { deleteGoal } from '../features/goals/goalSlice'
 
-function GoalItem({ goal }) {
+function GoalItems({ goal }) {
   const dispatch = useDispatch()
 
   return (
@@ -15,4 +15,4 @@ function GoalItem({ goal }) {
   )
 }
 
-export default GoalItem
+export default GoalItems
